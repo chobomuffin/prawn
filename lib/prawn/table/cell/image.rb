@@ -30,7 +30,9 @@ module Prawn
           define_method("#{option}=") { |v| @image_options[option] = v }
           define_method(option) { @image_options[option] }
         end
-
+        
+        def inline_format=(values)
+        end
 
         def initialize(pdf, point, options={})
           @image_options = {}
